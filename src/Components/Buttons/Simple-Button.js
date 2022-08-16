@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+export const SimpleButton = (props) => {
   // "lab text-5xl"
   return (
     <a className="m-4 hover:bg-lime-200" href={props.href}>
