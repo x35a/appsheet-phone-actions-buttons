@@ -13,6 +13,7 @@ import { SendConfirmationRequest } from "./Components/Buttons/Send-Confirmation-
 import { SendPaymentDetails } from "./Components/Buttons/Send-Payment-Details";
 import { SendCancelMessage } from "./Components/Buttons/Send-Cancel-Message";
 import { SendReminder } from "./Components/Buttons/Send-Reminder";
+import { SendConfirmationMessage } from "./Components/Buttons/Send-Confirmation-Message";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -50,6 +51,7 @@ class LikeButton extends React.Component {
           <SendPaymentDetails />
           <SendCancelMessage />
           <SendReminder />
+          <SendConfirmationMessage />
         </Container>
       </div>
     );
