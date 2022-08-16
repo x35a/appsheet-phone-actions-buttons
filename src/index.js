@@ -11,6 +11,8 @@ import { Call } from "./Components/Buttons/Call";
 import { SendTrackingNumberViberButton } from "./Components/Buttons/Send-tracking-number-viber";
 import { SendConfirmationRequest } from "./Components/Buttons/Send-Confirmation-Request";
 import { SendPaymentDetails } from "./Components/Buttons/Send-Payment-Details";
+import { SendCancelMessage } from "./Components/Buttons/Send-Cancel-Message";
+import { SendReminder } from "./Components/Buttons/Send-Reminder";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -46,6 +48,8 @@ class LikeButton extends React.Component {
           <SendTrackingNumberViberButton />
           <SendConfirmationRequest />
           <SendPaymentDetails />
+          <SendCancelMessage />
+          <SendReminder />
         </Container>
       </div>
     );
