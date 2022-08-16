@@ -4,10 +4,10 @@
 import "./styles.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Container from "./Components/Container";
-import OpentWhatsappChat from "./Components/Buttons/Open-Whatsapp-Chat";
-import OpenViberappChat from "./Components/Buttons/Open-Viber-Chat";
-import Call from "./Components/Buttons/Call";
+import { Container } from "./Components/Container";
+import { OpenWhatsappChat } from "./Components/Buttons/Open-Whatsapp-Chat";
+import { OpenViberChat } from "./Components/Buttons/Open-Viber-Chat";
+import { Call } from "./Components/Buttons/Call";
 import { SendTrackingNumberViberButton } from "./Components/Buttons/Send-tracking-number-viber";
 
 document.getElementById("app").innerHTML = `
@@ -38,9 +38,9 @@ class LikeButton extends React.Component {
           Мені подобається
         </button> */}
         <Container>
-          <OpentWhatsappChat></OpentWhatsappChat>
-          <OpenViberappChat></OpenViberappChat>
-          <Call></Call>
+          <OpenWhatsappChat />
+          <OpenViberChat />
+          <Call />
           <SendTrackingNumberViberButton />
         </Container>
       </div>

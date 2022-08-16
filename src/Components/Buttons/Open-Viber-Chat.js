@@ -1,13 +1,11 @@
 import React from "react";
 import SimpleButton from "./Simple-Button";
 import { phoneNumber } from "../../read-url-parameters";
+import { viberChatByNumber } from "../../viber-url-scheme";
 
-export default (props) => {
-  const href = `viber://chat?number=%2B38${phoneNumber}`;
+export const OpenViberChat = (props) => {
+  const href = `${viberChatByNumber}${phoneNumber}`;
   const iconClass = "lab la-viber";
-  return (
-    <SimpleButton href={href} iconClass={iconClass}>
-      Open Viber Chat
-    </SimpleButton>
-  );
+  const message = "Open Viber Chat";
+  return <SimpleButton href={href} iconClass={iconClass} message={message} />;
 };

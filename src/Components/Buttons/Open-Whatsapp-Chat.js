@@ -1,13 +1,11 @@
 import React from "react";
 import SimpleButton from "./Simple-Button";
 import { phoneNumber } from "../../read-url-parameters";
+import { whatsappChatByNumber } from "../../whatsapp-url-scheme";
 
-export default (props) => {
-  const href = `https://wa.me/%2B38$${phoneNumber}`;
+export const OpenWhatsappChat = (props) => {
+  const href = `${whatsappChatByNumber}${phoneNumber}`;
   const iconClass = "lab la-whatsapp";
-  return (
-    <SimpleButton href={href} iconClass={iconClass}>
-      Open Whatsapp Chat
-    </SimpleButton>
-  );
+  const message = "Open Whatsapp Chat";
+  return <SimpleButton href={href} iconClass={iconClass} message={message} />;
 };

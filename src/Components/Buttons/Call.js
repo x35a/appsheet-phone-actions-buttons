@@ -2,12 +2,9 @@ import React from "react";
 import SimpleButton from "./Simple-Button";
 import { phoneNumber } from "../../read-url-parameters";
 
-export default (props) => {
+export const Call = (props) => {
   const href = `tel:${phoneNumber}`;
   const iconClass = "las la-phone";
-  return (
-    <SimpleButton href={href} iconClass={iconClass}>
-      Call
-    </SimpleButton>
-  );
+  const message = "Call";
+  return <SimpleButton href={href} iconClass={iconClass} message={message} />;
 };
