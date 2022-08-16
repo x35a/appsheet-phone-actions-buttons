@@ -8,7 +8,12 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "parcel-bundler": "^1.6.1"
+    "@babel/core": "7.18.10",
+    "@babel/parser": "7.18.11",
+    "@babel/standalone": "7.18.12",
+    "parcel-bundler": "^1.6.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
