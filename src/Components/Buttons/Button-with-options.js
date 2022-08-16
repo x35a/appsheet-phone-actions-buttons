@@ -25,10 +25,10 @@ export const ButtonWithOptions = (props) => {
   }
 
   return (
-    <div class="m-4">
+    <div className="m-4">
       <a
         onClick={onClickHandler}
-        class="block mb-4 hover:bg-lime-200"
+        className="block mb-4 hover:bg-lime-200"
         href="null"
       >
         <i className={`${props.iconClass} text-5xl`}></i>
@@ -37,15 +37,15 @@ export const ButtonWithOptions = (props) => {
 
       {props.options.map((option, index) => {
         return (
-          <label key={index} class="flex items-center cursor-pointer mb-4">
+          <label key={index} className="flex items-center cursor-pointer mb-4">
             <input
               type="radio"
               name={props.inputNameGroup}
-              class="mr-4"
+              className="mr-4"
               checked={option.checked ? true : false}
               onChange={() => onChangeHandler(index)}
             />
-            <span class="whitespace-nowrap overflow-x-auto">
+            <span className="whitespace-nowrap overflow-x-auto">
               {option.message}
             </span>
           </label>
