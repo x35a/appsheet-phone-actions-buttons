@@ -14,6 +14,8 @@ import { SendPaymentDetails } from "./Components/Buttons/Send-Payment-Details";
 import { SendCancelMessage } from "./Components/Buttons/Send-Cancel-Message";
 import { SendReminder } from "./Components/Buttons/Send-Reminder";
 import { SendConfirmationMessage } from "./Components/Buttons/Send-Confirmation-Message";
+import { SendViberGroupInvite } from "./Components/Buttons/Send-Viber-Group-Invite";
+import { RequestCardNumber } from "./Components/Buttons/Request-Card-Number";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -52,6 +54,8 @@ class LikeButton extends React.Component {
           <SendCancelMessage />
           <SendReminder />
           <SendConfirmationMessage />
+          <SendViberGroupInvite />
+          <RequestCardNumber />
         </Container>
       </div>
     );
