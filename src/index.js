@@ -48,12 +48,12 @@ class LikeButton extends React.Component {
           <OpenWhatsappChat />
           <OpenViberChat />
           <Call />
+          <SendConfirmationMessage />
+          <SendPaymentDetails />
           <SendTrackingNumberViberButton />
           <SendConfirmationRequest />
-          <SendPaymentDetails />
           <SendCancelMessage />
           <SendReminder />
-          <SendConfirmationMessage />
           <SendViberGroupInvite />
           <RequestCardNumber />
         </Container>
