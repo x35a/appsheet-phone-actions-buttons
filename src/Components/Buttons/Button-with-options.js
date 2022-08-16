@@ -46,7 +46,7 @@ export const ButtonWithOptions = (props) => {
               onChange={() => onChangeHandler(index)}
             />
             <span className="whitespace-nowrap overflow-x-auto">
-              {option.message}
+              {option.inputText}
             </span>
           </label>
         );

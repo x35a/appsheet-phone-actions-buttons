@@ -1,4 +1,4 @@
-const uriParams = new URLSearchParams(location.search);
+const uriParams = new URLSearchParams(window.location.search);
 
 export const phoneNumber = uriParams.get("phone");
 export const trackingNumber = uriParams.get("tracking");

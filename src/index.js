@@ -10,6 +10,7 @@ import { OpenViberChat } from "./Components/Buttons/Open-Viber-Chat";
 import { Call } from "./Components/Buttons/Call";
 import { SendTrackingNumberViberButton } from "./Components/Buttons/Send-tracking-number-viber";
 import { SendConfirmationRequest } from "./Components/Buttons/Send-Confirmation-Request";
+import { SendPaymentDetails } from "./Components/Buttons/Send-Payment-Details";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -44,6 +45,7 @@ class LikeButton extends React.Component {
           <Call />
           <SendTrackingNumberViberButton />
           <SendConfirmationRequest />
+          <SendPaymentDetails />
         </Container>
       </div>
     );
