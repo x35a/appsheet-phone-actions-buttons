@@ -12,10 +12,10 @@ export const SimpleButton = (props) => {
   return (
     <a
       onClick={props.message ? onClickHandler : undefined}
-      className="m-4 hover:bg-lime-200"
+      className="flex items-center m-4 hover:bg-lime-200"
       href={props.href}
     >
-      <i className={`${props.iconClass} text-5xl`}></i>
+      <i className={`${props.iconClass} text-5xl mr-3`}></i>
       <span>{props.buttonText}</span>
     </a>
   );
