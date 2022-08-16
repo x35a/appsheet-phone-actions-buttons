@@ -5,6 +5,8 @@ import { phoneNumber } from "../../read-url-parameters";
 export const Call = (props) => {
   const href = `tel:${phoneNumber}`;
   const iconClass = "las la-phone";
-  const message = "Call";
-  return <SimpleButton href={href} iconClass={iconClass} message={message} />;
+  const buttonText = "Call";
+  return (
+    <SimpleButton href={href} iconClass={iconClass} buttonText={buttonText} />
+  );
 };

@@ -6,6 +6,8 @@ import { viberChatByNumber } from "../../viber-url-scheme";
 export const OpenViberChat = (props) => {
   const href = `${viberChatByNumber}${phoneNumber}`;
   const iconClass = "lab la-viber";
-  const message = "Open Viber Chat";
-  return <SimpleButton href={href} iconClass={iconClass} message={message} />;
+  const buttonText = "Open Viber Chat";
+  return (
+    <SimpleButton href={href} iconClass={iconClass} buttonText={buttonText} />
+  );
 };

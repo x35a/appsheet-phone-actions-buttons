@@ -9,6 +9,7 @@ import { OpenWhatsappChat } from "./Components/Buttons/Open-Whatsapp-Chat";
 import { OpenViberChat } from "./Components/Buttons/Open-Viber-Chat";
 import { Call } from "./Components/Buttons/Call";
 import { SendTrackingNumberViberButton } from "./Components/Buttons/Send-tracking-number-viber";
+import { SendConfirmationRequest } from "./Components/Buttons/Send-Confirmation-Request";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -42,6 +43,7 @@ class LikeButton extends React.Component {
           <OpenViberChat />
           <Call />
           <SendTrackingNumberViberButton />
+          <SendConfirmationRequest />
         </Container>
       </div>
     );
