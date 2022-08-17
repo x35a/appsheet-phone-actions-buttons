@@ -7,7 +7,7 @@ const justinTrackingLink = `https://justin.ua/tracking?number=${trackingNumber}`
 let trackingLink;
 
 if (!trackingNumber) {
-  trackingLink = "trackingNumber is not defined";
+  trackingLink = undefined;
 } else {
   switch (trackingNumber.slice(0, 2)) {
     case "20":
@@ -21,7 +21,7 @@ if (!trackingNumber) {
       trackingLink = justinTrackingLink;
       break;
     default:
-      trackingLink = "unknown";
+      trackingLink = undefined;
   }
 }
 

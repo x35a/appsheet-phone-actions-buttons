@@ -18,8 +18,17 @@ export const SendConfirmationMessage = (props) => {
 ${orderId} 
 ${saleTotal} грн
 ${products}
-ттн очікується: ${trackingNumber}
-${trackingLink}`;
+${
+  trackingNumber
+    ? "ттн очікується: " + trackingNumber
+    : "Замовлення прийняте в роботу, очікуйте на подальшу інформацію, дякуємо."
+}
+${
+  trackingLink
+    ? "Переглядайте детальну інформацію у додатку або за посиланням: " +
+      trackingLink
+    : ""
+}`;
 
   return (
     <SimpleButton
