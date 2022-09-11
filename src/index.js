@@ -12,6 +12,7 @@ import { SendReminder } from "./Components/Buttons/Send-Reminder";
 import { SendConfirmationMessage } from "./Components/Buttons/Send-Confirmation-Message";
 import { SendViberGroupInvite } from "./Components/Buttons/Send-Viber-Group-Invite";
 import { RequestCardNumber } from "./Components/Buttons/Request-Card-Number";
+import { SendPromocode } from "./Components/Buttons/Send-Promocode";
 
 const App = React.createElement(() => {
   return (
@@ -27,6 +28,7 @@ const App = React.createElement(() => {
       <SendReminder />
       <SendViberGroupInvite />
       <RequestCardNumber />
+      <SendPromocode />
     </Container>
   );
 });
