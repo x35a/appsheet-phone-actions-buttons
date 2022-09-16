@@ -10,7 +10,7 @@ import { viberChatByNumber } from "../../viber-url-scheme";
 
 export const SendConfirmationRequest = (props) => {
   const href = `${viberChatByNumber}${phoneNumber}`;
-  const iconClass = "las la-check-circle";
+  const iconClass = "las la-check";
   const buttonText = "Send Postpay Confirmation Request (Viber)";
   const message = `Дякуємо за ваше чудове замовлення!
 ${orderId}
