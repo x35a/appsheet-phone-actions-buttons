@@ -26,7 +26,7 @@ const App = React.createElement(() => {
       <SendConfirmationRequest />
       <SendCancelMessage />
       <SendReminder />
-      <SendViberGroupInvite />
+      {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
       <SendPromocode />
     </Container>
