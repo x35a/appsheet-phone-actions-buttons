@@ -6,8 +6,10 @@ import { viberChatByNumber } from "../../viber-url-scheme";
 export const RequestCardNumber = (props) => {
   const href = `${viberChatByNumber}${phoneNumber}`;
   const iconClass = "las la-undo";
-  const buttonText = "Request Customer Card Number for Money Back";
-  const message = `Доброго дня, ${productsNotFound} на жаль зараз немає в наявності.
+  const buttonText = "Money Back, Request Card Number";
+  const message = `Доброго дня
+${productsNotFound}
+на жаль не було в наявності, база даних сайту не встигла оновитись, просимо вибачення за незручності.
 Напишіть будь ласка номер своєї картки, ми зробимо повернення передоплати.`;
 
   return (

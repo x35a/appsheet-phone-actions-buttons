@@ -24,7 +24,7 @@ const App = React.createElement(() => {
       <SendPaymentDetails />
       <SendTrackingNumberViberButton />
       <SendConfirmationRequest />
-      <SendCancelMessage />
+      {/* <SendCancelMessage /> */}
       <SendReminder />
       {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
