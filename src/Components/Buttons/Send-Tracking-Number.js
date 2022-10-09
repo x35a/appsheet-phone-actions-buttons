@@ -14,7 +14,7 @@ export const SendTrackingNumberViberButton = () => {
     trackingLink: trackingLink,
     href: `${viberChatByNumber}${phoneNumber}`,
     iconClass: "las la-shipping-fast",
-    buttonText: "Send Tracking Number (Viber)",
+    buttonText: "Send Tracking Number",
     inputNameGroup: "SendTrackingNumberViberButton",
     options: [
       {

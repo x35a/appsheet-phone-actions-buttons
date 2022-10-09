@@ -25,11 +25,11 @@ const App = React.createElement(() => {
       <SendPaymentDetails />
       <SendTrackingNumberViberButton />
       <SendConfirmationRequest />
-      {/* <SendCancelMessage /> */}
       <SendReminder />
       {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
       <SendPromocode />
+      <SendCancelMessage />
       <RespondToComplaint />
     </Container>
   );

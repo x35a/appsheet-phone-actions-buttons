@@ -13,7 +13,7 @@ import { viberChatByNumber } from "../../viber-url-scheme";
 export const SendConfirmationMessage = (props) => {
   const href = `${viberChatByNumber}${phoneNumber}`;
   const iconClass = "las la-check-double";
-  const buttonText = "Send Confirmation Message (Viber)";
+  const buttonText = "Send Confirmation Message";
   const message = `Дякуємо за ваше чудове замовлення!
 ${orderId} 
 ${saleTotal} грн

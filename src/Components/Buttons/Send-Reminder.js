@@ -7,7 +7,7 @@ import { viberChatByNumber } from "../../viber-url-scheme";
 export const SendReminder = (props) => {
   const href = `${viberChatByNumber}${phoneNumber}`;
   const iconClass = "las la-bell";
-  const buttonText = "Send Tracking Number Reminder (Viber)";
+  const buttonText = "Send Tracking Number Reminder";
   const message = `Доброго дня, Ваше замовлення знаходиться у відділенні пошти, ттн ${trackingNumber}
 Незабаром почнеться платне зберігання, будь ласка отримайте посилку.
 Переглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;

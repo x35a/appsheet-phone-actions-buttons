@@ -22,7 +22,7 @@ export const SendPaymentDetails = () => {
     trackingLink: trackingLink,
     href: `${viberChatByNumber}${phoneNumber}`,
     iconClass: "lab la-cc-apple-pay",
-    buttonText: "Send Payment Details (Viber)",
+    buttonText: "Send Payment Details",
     inputNameGroup: "SendPaymentDetails",
     options: [
       {
