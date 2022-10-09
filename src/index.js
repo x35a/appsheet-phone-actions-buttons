@@ -7,7 +7,6 @@ import { Call } from "./Components/Buttons/Call";
 import { SendTrackingNumber } from "./Components/Buttons/Send-Tracking-Number";
 import { SendPaymentDetails } from "./Components/Buttons/Send-Payment-Details";
 import { SendCancelMessage } from "./Components/Buttons/Send-Cancel-Message";
-import { SendReminder } from "./Components/Buttons/Send-Reminder";
 import { SendConfirmationMessage } from "./Components/Buttons/Send-Confirmation-Message";
 import { SendViberGroupInvite } from "./Components/Buttons/Send-Viber-Group-Invite";
 import { RequestCardNumber } from "./Components/Buttons/Request-Card-Number";
@@ -23,7 +22,6 @@ const App = React.createElement(() => {
       <SendConfirmationMessage />
       <SendPaymentDetails />
       <SendTrackingNumber />
-      <SendReminder />
       {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
       <SendCancelMessage />
