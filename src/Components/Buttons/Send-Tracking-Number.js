@@ -4,9 +4,12 @@ import { trackingLink } from "../../build-tracking-link";
 import { ButtonWithOptions } from "./Button-with-options";
 import { viberChatByNumber } from "../../viber-url-scheme";
 
-export const SendTrackingNumberViberButton = () => {
-  const messageV1 = `Посилка: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
-  const messageV2 = `Дякуємо, ттн очікується: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
+export const SendTrackingNumber = () => {
+  const message1 = `Посилка: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
+  const message2 = `Дякуємо, ттн очікується: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
+  const message3 = `Доброго дня, Ваше замовлення знаходиться у відділенні пошти, ттн ${trackingNumber}
+Незабаром почнеться платне зберігання, будь ласка отримайте посилку.
+Переглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
 
   const props = {
     phoneNumber: phoneNumber,
@@ -15,17 +18,22 @@ export const SendTrackingNumberViberButton = () => {
     href: `${viberChatByNumber}${phoneNumber}`,
     iconClass: "las la-shipping-fast",
     buttonText: "Send Tracking Number",
-    inputNameGroup: "SendTrackingNumberViberButton",
+    inputNameGroup: "SendTrackingNumber",
     options: [
       {
         checked: true,
-        inputText: messageV1,
-        message: messageV1
+        inputText: message1,
+        message: message1
       },
       {
         checked: false,
-        inputText: messageV2,
-        message: messageV2
+        inputText: message2,
+        message: message2
+      },
+      {
+        checked: false,
+        inputText: message3,
+        message: message3
       }
     ]
   };

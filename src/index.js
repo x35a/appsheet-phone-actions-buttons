@@ -4,7 +4,7 @@ import { Container } from "./Components/Container";
 import { OpenWhatsappChat } from "./Components/Buttons/Open-Whatsapp-Chat";
 import { OpenViberChat } from "./Components/Buttons/Open-Viber-Chat";
 import { Call } from "./Components/Buttons/Call";
-import { SendTrackingNumberViberButton } from "./Components/Buttons/Send-Tracking-Number";
+import { SendTrackingNumber } from "./Components/Buttons/Send-Tracking-Number";
 import { SendPaymentDetails } from "./Components/Buttons/Send-Payment-Details";
 import { SendCancelMessage } from "./Components/Buttons/Send-Cancel-Message";
 import { SendReminder } from "./Components/Buttons/Send-Reminder";
@@ -22,7 +22,7 @@ const App = React.createElement(() => {
       <Call />
       <SendConfirmationMessage />
       <SendPaymentDetails />
-      <SendTrackingNumberViberButton />
+      <SendTrackingNumber />
       <SendReminder />
       {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
