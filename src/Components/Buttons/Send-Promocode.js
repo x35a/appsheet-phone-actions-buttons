@@ -1,10 +1,10 @@
 import React from "react";
 import { SimpleButton } from "./button-templates/Simple-Button";
 import { orderId, phoneNumber } from "../../read-url-parameters";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const SendPromocode = (props) => {
-  const href = `${viberChatByNumber}${phoneNumber}`;
+  const href = getHref(phoneNumber).viber;
   const iconClass = "las la-percent";
   const buttonText = "Send Promocode";
   const message = `Пропонуємо промокод на знижку 3%

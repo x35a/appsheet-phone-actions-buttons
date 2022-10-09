@@ -1,10 +1,10 @@
 import React from "react";
 import { SimpleButton } from "./button-templates/Simple-Button";
 import { phoneNumber } from "../../read-url-parameters";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const SendViberGroupInvite = (props) => {
-  const href = `${viberChatByNumber}${phoneNumber}`;
+  const href = getHref(phoneNumber).viber;
   const iconClass = "las la-user-friends";
   const buttonText = "Send Viber Group Invite";
   const message = `Запрошуємо до нашої групи де ми викладаємо новинки, акції та інші цікаві пропозиції, приєднуйтесь, будемо раді Вас бачити (smiley)

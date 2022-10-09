@@ -8,12 +8,12 @@ import {
   products
 } from "../../read-url-parameters";
 import { trackingLink } from "../../build-tracking-link";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const SendConfirmationMessage = () => {
   const props = {
     phoneNumber: phoneNumber,
-    href: `${viberChatByNumber}${phoneNumber}`,
+    href: getHref(phoneNumber).viber,
     iconClass: "las la-check",
     buttonText: "Send Confirmation Message",
     inputNameGroup: "SendConfirmationMessage",

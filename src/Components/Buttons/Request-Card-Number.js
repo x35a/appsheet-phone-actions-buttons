@@ -1,10 +1,10 @@
 import React from "react";
 import { SimpleButton } from "./button-templates/Simple-Button";
 import { phoneNumber, productsNotFound } from "../../read-url-parameters";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const RequestCardNumber = (props) => {
-  const href = `${viberChatByNumber}${phoneNumber}`;
+  const href = getHref(phoneNumber).viber;
   const iconClass = "las la-undo";
   const buttonText = "Money Back (Request Card Number)";
   const message = `Доброго дня

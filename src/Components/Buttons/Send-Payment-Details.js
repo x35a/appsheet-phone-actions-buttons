@@ -10,7 +10,7 @@ import {
 } from "../../read-url-parameters";
 import { trackingLink } from "../../build-tracking-link";
 import { ButtonWithOptions } from "./button-templates/Button-with-options";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const SendPaymentDetails = () => {
   const privatCard = "5168745609194805";
@@ -20,7 +20,7 @@ export const SendPaymentDetails = () => {
     phoneNumber: phoneNumber,
     trackingNumber: trackingNumber,
     trackingLink: trackingLink,
-    href: `${viberChatByNumber}${phoneNumber}`,
+    href: getHref(phoneNumber).viber,
     iconClass: "lab la-cc-apple-pay",
     buttonText: "Send Payment Details",
     inputNameGroup: "SendPaymentDetails",

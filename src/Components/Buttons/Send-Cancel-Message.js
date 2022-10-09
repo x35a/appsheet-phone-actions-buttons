@@ -5,12 +5,12 @@ import {
   phoneNumber,
   productsNotFound
 } from "../../read-url-parameters";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const SendCancelMessage = () => {
   const props = {
     phoneNumber: phoneNumber,
-    href: `${viberChatByNumber}${phoneNumber}`,
+    href: getHref(phoneNumber).viber,
     iconClass: "las la-window-close",
     buttonText: "Send Cancel Message",
     inputNameGroup: "SendCancelMessage",

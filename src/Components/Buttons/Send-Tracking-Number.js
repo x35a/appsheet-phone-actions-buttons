@@ -2,7 +2,7 @@ import React from "react";
 import { phoneNumber, trackingNumber } from "../../read-url-parameters";
 import { trackingLink } from "../../build-tracking-link";
 import { ButtonWithOptions } from "./button-templates/Button-with-options";
-import { viberChatByNumber } from "../../viber-url-scheme";
+import { getHref } from "../../get-href";
 
 export const SendTrackingNumber = () => {
   const message1 = `Посилка: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
@@ -15,7 +15,7 @@ export const SendTrackingNumber = () => {
     phoneNumber: phoneNumber,
     trackingNumber: trackingNumber,
     trackingLink: trackingLink,
-    href: `${viberChatByNumber}${phoneNumber}`,
+    href: getHref(phoneNumber).viber,
     iconClass: "las la-shipping-fast",
     buttonText: "Send Tracking Number",
     inputNameGroup: "SendTrackingNumber",
