@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleButton } from "./Simple-Button";
+import { ButtonWithOptions } from "./Button-with-options";
 import {
   phoneNumber,
   trackingNumber,
@@ -10,11 +10,18 @@ import {
 import { trackingLink } from "../../build-tracking-link";
 import { viberChatByNumber } from "../../viber-url-scheme";
 
-export const SendConfirmationMessage = (props) => {
-  const href = `${viberChatByNumber}${phoneNumber}`;
-  const iconClass = "las la-check-double";
-  const buttonText = "Send Confirmation Message";
-  const message = `Дякуємо за ваше чудове замовлення!
+export const SendConfirmationMessage = () => {
+  const props = {
+    phoneNumber: phoneNumber,
+    href: `${viberChatByNumber}${phoneNumber}`,
+    iconClass: "las la-check",
+    buttonText: "Send Confirmation Message",
+    inputNameGroup: "SendConfirmationMessage",
+    options: [
+      {
+        checked: true,
+        inputText: "WayForPay Confimation",
+        message: `Дякуємо за ваше чудове замовлення!
 ${orderId} 
 ${saleTotal} грн
 ${products}
@@ -28,14 +35,28 @@ ${
     ? "Переглядайте детальну інформацію у додатку або за посиланням: " +
       trackingLink
     : ""
-}`;
+}`
+      },
+      {
+        checked: false,
+        inputText: "Postpay Confirmation Request",
+        message: `Дякуємо за ваше чудове замовлення!
+${orderId}
+${saleTotal} грн
+${products}
+Уточнюємо наявність. *Скажіть будь ласка, замовлення актуальне?*`
+      },
+      {
+        checked: false,
+        inputText: "Stock Check Promise",
+        message: `Дякуємо за ваше чудове замовлення!
+${orderId}
+${saleTotal} грн
+${products}
+Склад перевірить наявність і кількість, і проінформує Вас, дякуємо.`
+      }
+    ]
+  };
 
-  return (
-    <SimpleButton
-      href={href}
-      iconClass={iconClass}
-      buttonText={buttonText}
-      message={message}
-    />
-  );
+  return <ButtonWithOptions {...props} />;
 };
