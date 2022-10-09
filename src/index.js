@@ -28,8 +28,8 @@ const App = React.createElement(() => {
       <SendReminder />
       {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
-      <SendPromocode />
       <SendCancelMessage />
+      <SendPromocode />
       <RespondToComplaint />
     </Container>
   );
