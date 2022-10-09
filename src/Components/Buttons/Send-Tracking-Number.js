@@ -1,7 +1,7 @@
 import React from "react";
 import { phoneNumber, trackingNumber } from "../../read-url-parameters";
 import { trackingLink } from "../../build-tracking-link";
-import { ButtonWithOptions } from "./Button-with-options";
+import { ButtonWithOptions } from "./button-templates/Button-with-options";
 import { viberChatByNumber } from "../../viber-url-scheme";
 
 export const SendTrackingNumber = () => {

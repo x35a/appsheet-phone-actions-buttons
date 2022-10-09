@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleButton } from "./Simple-Button";
+import { SimpleButton } from "./button-templates/Simple-Button";
 import { phoneNumber } from "../../read-url-parameters";
 import { viberChatByNumber } from "../../viber-url-scheme";
 

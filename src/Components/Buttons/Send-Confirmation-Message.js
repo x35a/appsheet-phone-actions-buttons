@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonWithOptions } from "./Button-with-options";
+import { ButtonWithOptions } from "./button-templates/Button-with-options";
 import {
   phoneNumber,
   trackingNumber,
