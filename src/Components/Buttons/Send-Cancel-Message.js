@@ -24,8 +24,14 @@ ${productsNotFound}
       },
       {
         checked: false,
-        inputText: "Self Cancel Request (Prom)",
-        message: `Можете будь ласка скасувати замовлення ${orderId} у своєму особістому кабінеті Prom ?`
+        inputText: "Self Cancel Request",
+        message: `Можете будь ласка скасувати замовлення ${orderId} у своєму особистому кабінеті? Оскільки з нас знімається додаткова комісія за замовлення.
+
+Як скасувати замовлення? (Prom)
+https://help.prom.ua/hc/ru/articles/360008252598
+
+Як скасувати замовлення? (Bigl)
+https://help.bigl.ua/uk/article/57-jak-skasuvati-zamovlennja`
       }
     ]
   };
