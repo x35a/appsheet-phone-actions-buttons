@@ -39,21 +39,21 @@ ${
       },
       {
         checked: false,
+        inputText: "Stock Check Promise",
+        message: `Дякуємо за ваше чудове замовлення!
+        ${orderId}
+        ${saleTotal} грн
+        ${products}
+        Склад перевірить наявність і кількість, і проінформує Вас, дякуємо.`
+      },
+      {
+        checked: false,
         inputText: "Postpay Confirmation Request",
         message: `Дякуємо за ваше чудове замовлення!
 ${orderId}
 ${saleTotal} грн
 ${products}
 Уточнюємо наявність. *Скажіть будь ласка, замовлення актуальне?*`
-      },
-      {
-        checked: false,
-        inputText: "Stock Check Promise",
-        message: `Дякуємо за ваше чудове замовлення!
-${orderId}
-${saleTotal} грн
-${products}
-Склад перевірить наявність і кількість, і проінформує Вас, дякуємо.`
       }
     ]
   };
