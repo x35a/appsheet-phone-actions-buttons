@@ -12,6 +12,7 @@ import { SendConfirmationMessage } from "./Components/Buttons/Send-Confirmation-
 import { RequestCardNumber } from "./Components/Buttons/Request-Card-Number";
 import { SendPromocode } from "./Components/Buttons/Send-Promocode";
 import { RespondToComplaint } from "./Components/Buttons/Respond-to-Complaint";
+import { ReplyOnFeedback } from "./Components/Buttons/Reply-on-Feedback";
 
 const App = React.createElement(() => {
   return (
@@ -27,6 +28,7 @@ const App = React.createElement(() => {
       <SendCancelMessage />
       <SendPromocode />
       <RespondToComplaint />
+      <ReplyOnFeedback />
     </Container>
   );
 });
