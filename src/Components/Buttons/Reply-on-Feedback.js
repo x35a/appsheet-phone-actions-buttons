@@ -6,7 +6,7 @@ import { getHref } from "../../get-href";
 export const ReplyOnFeedback = () => {
   const href = getHref(phoneNumber).viber;
   const iconClass = "las la-comment-dots";
-  const buttonText = "Reply On Positive Feedback";
+  const buttonText = "Дякуємо за Ваш чудовий відгук!";
   const message = `Дякуємо за Ваш чудовий відгук! Приємних покупок! 😊`;
 
   return (
