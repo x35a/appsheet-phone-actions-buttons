@@ -13,6 +13,7 @@ import { RequestCardNumber } from "./Components/Buttons/Request-Card-Number";
 import { SendPromocode } from "./Components/Buttons/Send-Promocode";
 import { RespondToComplaint } from "./Components/Buttons/Respond-to-Complaint";
 import { ReplyOnFeedback } from "./Components/Buttons/Reply-on-Feedback";
+import { SendMoneyBackMessage } from "./Components/Buttons/Send-Money-Back-Message";
 
 const App = React.createElement(() => {
   return (
@@ -25,6 +26,7 @@ const App = React.createElement(() => {
       <SendTrackingNumber />
       {/* <SendViberGroupInvite /> */}
       <RequestCardNumber />
+      <SendMoneyBackMessage />
       <SendCancelMessage />
       <SendPromocode />
       <RespondToComplaint />

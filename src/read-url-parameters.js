@@ -8,3 +8,4 @@ export const saleTotalPlusFee = uriParams.get("saleTotalPlusFee");
 export const prepay30PlusFee = uriParams.get("prepay30PlusFee");
 export const products = uriParams.get("products");
 export const productsNotFound = uriParams.get("productsNotFound");
+export const comments = uriParams.get("comments")
