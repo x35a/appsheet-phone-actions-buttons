@@ -6,7 +6,7 @@ import { getHref } from "../../get-href";
 export const RequestCardNumber = (props) => {
   const href = getHref(phoneNumber).viber;
   const iconClass = "las la-undo";
-  const buttonText = "Money Back (Request Card Number)";
+  const buttonText = "Request Card Number (Money Back)";
   const message = `Доброго дня
 ${productsNotFound}
 на жаль не було в наявності, база даних сайту не встигла оновитись, просимо вибачення за незручності.
