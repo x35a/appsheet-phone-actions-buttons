@@ -12,26 +12,27 @@ export const SendTrackingNumber = () => {
 Переглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
 
   const props = {
-    phoneNumber: phoneNumber,
     trackingNumber: trackingNumber,
     trackingLink: trackingLink,
-    href: getHref(phoneNumber).viber,
     iconClass: "las la-shipping-fast",
     buttonText: "Send Tracking Number",
     inputNameGroup: "SendTrackingNumber",
     options: [
       {
         checked: true,
+        href: getHref(phoneNumber).viber,
         inputText: message1,
         message: message1
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: message2,
         message: message2
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: message3,
         message: message3
       }

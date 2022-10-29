@@ -10,15 +10,14 @@ import { getHref } from "../../get-href";
 
 export const SendMoneyBackMessage = () => {
   const props = {
-    phoneNumber: phoneNumber,
     comments: comments,
-    href: getHref(phoneNumber).viber,
     iconClass: "las la-undo",
     buttonText: "Money Back",
     inputNameGroup: "sendMoneyBackMessage",
     options: [
       {
         checked: true,
+        href: getHref(phoneNumber).viber,
         inputText: "Request Card Number",
         message: `Доброго дня
 ${productsNotFound}
@@ -27,6 +26,7 @@ ${productsNotFound}
       },
       {
         check: false,
+        href: getHref("0677722166").viber,
         inputText: "Send r card number",
         message: `${comments}
 orderId ${orderId}`

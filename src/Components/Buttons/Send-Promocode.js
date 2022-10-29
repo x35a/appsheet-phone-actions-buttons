@@ -5,11 +5,11 @@ import { getHref } from "../../get-href";
 
 export const SendPromocode = () => {
   const props = {
-    href: getHref(phoneNumber).viber,
     iconClass: "las la-percent",
     options: [
       {
         checked: true,
+        href: getHref(phoneNumber).viber,
         inputText: "smartfood promo with expire date",
         message: `Пропонуємо промокод на знижку 3%
 Ваш промокод: ${orderId}
@@ -18,6 +18,7 @@ export const SendPromocode = () => {
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "smartfood promo no limits",
         message: `Пропонуємо промокод на знижку 3%
 Ваш промокод: ${orderId}
@@ -25,6 +26,7 @@ export const SendPromocode = () => {
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "homemarket promo with expire date",
         message: `Пропонуємо промокод на знижку 3%
 Ваш промокод: ${orderId}
@@ -33,6 +35,7 @@ export const SendPromocode = () => {
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "homemarket promo no limit",
         message: `Пропонуємо промокод на знижку 3%
 Ваш промокод: ${orderId}

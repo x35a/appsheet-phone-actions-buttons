@@ -20,7 +20,8 @@ export const ButtonWithOptions = (props) => {
     navigator.clipboard.writeText(message).then(() => {
       console.log(message);
     });
-    window.location.href = props.href;
+    const href = activeOption.href;
+    window.location.href = href;
     console.log(activeOption);
   }
 

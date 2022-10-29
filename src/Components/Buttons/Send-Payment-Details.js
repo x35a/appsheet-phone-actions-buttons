@@ -17,16 +17,15 @@ export const SendPaymentDetails = () => {
   const monoCard = "4441114441300165";
 
   const props = {
-    phoneNumber: phoneNumber,
     trackingNumber: trackingNumber,
     trackingLink: trackingLink,
-    href: getHref(phoneNumber).viber,
     iconClass: "lab la-cc-apple-pay",
     buttonText: "Send Payment Details",
     inputNameGroup: "SendPaymentDetails",
     options: [
       {
         checked: true,
+        href: getHref(phoneNumber).viber,
         inputText: "privat prepay 30% plus fee",
         message: `Дякуємо за ваше чудове замовлення!
 ${orderId}
@@ -40,6 +39,7 @@ ${products}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "privat prepay 100% plus fee",
         message: `Дякуємо за ваше чудове замовлення!
 ${orderId}
@@ -51,6 +51,7 @@ ${products}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "privat",
         message: `Дякуємо за ваше чудове замовлення!
 ${orderId}
@@ -62,6 +63,7 @@ ${products}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "mono",
         message: `Дякуємо за ваше чудове замовлення!
 ${orderId}
@@ -73,6 +75,7 @@ ${products}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "privat prepay 10%",
         message: `Дякуємо за ваше чудове замовлення!
 ${orderId}
@@ -83,6 +86,7 @@ ${products}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "tilda потеряшки",
         message: `Доброго дня, це інтернет магазин SmartFood, ми отримали сповіщення про Ваше замовлення на
 ${products}
@@ -95,6 +99,7 @@ ${privatCard}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: "remind payment details",
         message: `Доброго дня, якщо замовлення актуально, ми би могли відправити його сьогодні.
 Переказ можете зробити на картку

@@ -13,7 +13,7 @@ import { RequestCardNumber } from "./Components/Buttons/Request-Card-Number";
 import { SendPromocode } from "./Components/Buttons/Send-Promocode";
 import { RespondToComplaint } from "./Components/Buttons/Respond-to-Complaint";
 import { ReplyOnFeedback } from "./Components/Buttons/Reply-on-Feedback";
-// import { SendMoneyBackMessage } from "./Components/Buttons/Send-Money-Back-Message";
+import { SendMoneyBackMessage } from "./Components/Buttons/Send-Money-Back-Message";
 import { SendrCardNumber } from "./Components/Buttons/Send-r-Card-Number";
 
 const App = React.createElement(() => {
@@ -26,7 +26,7 @@ const App = React.createElement(() => {
       <SendPaymentDetails />
       <SendTrackingNumber />
       {/* <SendViberGroupInvite /> */}
-      {/* <SendMoneyBackMessage /> */}
+      <SendMoneyBackMessage />
       <SendrCardNumber />
       <RequestCardNumber />
       <SendCancelMessage />

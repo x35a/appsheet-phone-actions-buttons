@@ -9,14 +9,13 @@ import { getHref } from "../../get-href";
 
 export const SendCancelMessage = () => {
   const props = {
-    phoneNumber: phoneNumber,
-    href: getHref(phoneNumber).viber,
     iconClass: "las la-window-close",
     buttonText: "Send Cancel Message",
     inputNameGroup: "SendCancelMessage",
     options: [
       {
         checked: true,
+        href: getHref(phoneNumber).viber,
         inputText: "Out of Stock",
         message: `Доброго дня
 ${productsNotFound}
@@ -24,6 +23,7 @@ ${productsNotFound}
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: `Якщо замовлення ${orderId} вже неактуальне, будь ласка скасуйте його`,
         message: `Якщо замовлення ${orderId} вже неактуальне, будь ласка скасуйте його у своєму особистому кабінеті.
 Оскільки з нас знімається додаткова комісія за замовлення.
@@ -37,6 +37,7 @@ https://help.bigl.ua/uk/article/57-jak-skasuvati-zamovlennja`
       },
       {
         checked: false,
+        href: getHref(phoneNumber).viber,
         inputText: `Можете будь ласка скасувати замовлення ${orderId} у своєму особистому кабінеті?`,
         message: `Можете будь ласка скасувати замовлення ${orderId} у своєму особистому кабінеті?
 Оскільки з нас знімається додаткова комісія за замовлення.
