@@ -41,10 +41,10 @@ ${
         href: getHref(phoneNumber).viber,
         inputText: "Stock Check Promise",
         message: `Дякуємо за ваше чудове замовлення!
-        ${orderId}
-        ${saleTotal} грн
-        ${products}
-        Склад перевірить наявність і кількість, і проінформує Вас, дякуємо.`
+${orderId}
+${saleTotal} грн
+${products}
+Склад перевірить наявність і кількість, і проінформує Вас, дякуємо.`
       },
       {
         checked: false,
