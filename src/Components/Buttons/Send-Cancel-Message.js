@@ -9,7 +9,7 @@ import { getHref } from "../../get-href";
 
 export const SendCancelMessage = () => {
   const props = {
-    iconClass: "las la-window-close",
+    iconClass: "las la-times",
     buttonText: "Send Cancel Message",
     inputNameGroup: "SendCancelMessage",
     options: [
@@ -20,6 +20,13 @@ export const SendCancelMessage = () => {
         message: `Доброго дня
 ${productsNotFound}
 на жаль немає в наявності, база даних сайту не встигла оновитись, просимо вибачення за незручності.`
+      },
+      {
+        checked: true,
+        href: getHref(phoneNumber).viber,
+        inputText: "Expired Date",
+        message: `Доброго дня, склад виявив проблему, що нажаль у ${productsNotFound} сплив строк придатності.
+Ми не можемо відправити товар зі строками, перепрошуємо за цю проблему.`
       },
       {
         checked: false,
