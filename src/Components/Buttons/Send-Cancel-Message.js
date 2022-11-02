@@ -22,7 +22,7 @@ ${productsNotFound}
 на жаль немає в наявності, база даних сайту не встигла оновитись, просимо вибачення за незручності.`
       },
       {
-        checked: true,
+        checked: false,
         href: getHref(phoneNumber).viber,
         inputText: "Expired Date",
         message: `Доброго дня, склад виявив проблему, що нажаль у ${productsNotFound} сплив строк придатності.
