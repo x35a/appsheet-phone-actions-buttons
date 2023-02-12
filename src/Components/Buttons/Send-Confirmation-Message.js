@@ -7,10 +7,17 @@ import {
   saleTotal,
   products
 } from "../../read-url-parameters";
-import { trackingLink } from "../../build-tracking-link";
+import {
+  trackingLink,
+  isRozetkaTrackingNumber
+} from "../../build-tracking-link";
 import { getHref } from "../../get-href";
 
 export const SendConfirmationMessage = () => {
+  const trackingLinkMessage = isRozetkaTrackingNumber
+    ? `Переглядайте детальну інформацію у особистому кабінеті Prom за посиланням ${trackingLink}`
+    : `Переглядайте детальну інформацію у додатку або за посиланням ${trackingLink}`;
+
   const props = {
     iconClass: "las la-check",
     buttonText: "Send Confirmation Message",
@@ -27,14 +34,9 @@ ${products}
 ${
   trackingNumber
     ? "ттн очікується: " + trackingNumber
-    : "Замовлення прийняте в роботу, очікуйте на подальшу інформацію, дякуємо."
+    : "Замовлення прийняте в роботу, після відправки надішемо ТТН."
 }
-${
-  trackingLink
-    ? "Переглядайте детальну інформацію у додатку або за посиланням: " +
-      trackingLink
-    : ""
-}`
+${trackingLink ? trackingLinkMessage : ""}`
       },
       {
         checked: false,

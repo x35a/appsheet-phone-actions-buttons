@@ -1,15 +1,21 @@
 import React from "react";
 import { phoneNumber, trackingNumber } from "../../read-url-parameters";
-import { trackingLink } from "../../build-tracking-link";
+import {
+  trackingLink,
+  isRozetkaTrackingNumber
+} from "../../build-tracking-link";
 import { ButtonWithOptions } from "./button-templates/Button-with-options";
 import { getHref } from "../../get-href";
 
 export const SendTrackingNumber = () => {
-  const message1 = `Посилка: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
-  const message2 = `Дякуємо, ттн очікується: ${trackingNumber}\nПереглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
+  const trackingLinkMessage = isRozetkaTrackingNumber
+    ? `Переглядайте детальну інформацію у особистому кабінеті Prom за посиланням ${trackingLink}`
+    : `Переглядайте детальну інформацію у додатку або за посиланням ${trackingLink}`;
+  const message1 = `Посилка: ${trackingNumber}\n${trackingLinkMessage}`;
+  const message2 = `Дякуємо, ттн очікується: ${trackingNumber}\n${trackingLinkMessage}`;
   const message3 = `Доброго дня, Ваше замовлення знаходиться у відділенні пошти, ттн ${trackingNumber}
 Незабаром почнеться платне зберігання, будь ласка отримайте посилку.
-Переглядайте детальну інформацію у додатку або за посиланням: ${trackingLink}`;
+${trackingLinkMessage}`;
 
   const props = {
     trackingNumber: trackingNumber,

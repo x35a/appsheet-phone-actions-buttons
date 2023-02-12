@@ -1,8 +1,9 @@
-import { trackingNumber } from "./read-url-parameters";
+import { trackingNumber, orderId } from "./read-url-parameters";
 
 const novaposhtaTrackingLink = `https://novaposhta.ua/tracking/?cargo_number=${trackingNumber}`;
 const ukrposhtaTrackingLink = `https://track.ukrposhta.ua/tracking_UA.html?barcode=${trackingNumber}`;
 const justinTrackingLink = `https://justin.ua/tracking?number=${trackingNumber}`;
+const promLinkToOrder = `https://my.prom.ua/ua/cabinet/user/orders/${orderId}`;
 
 let trackingLink;
 
@@ -20,9 +21,14 @@ if (!trackingNumber) {
     case "42":
       trackingLink = justinTrackingLink;
       break;
+    case "PR":
+      trackingLink = promLinkToOrder;
+      break;
     default:
       trackingLink = undefined;
   }
 }
 
-export { trackingLink };
+const isRozetkaTrackingNumber = /PRM/i.test(trackingNumber) ? true : false;
+
+export { trackingLink, isRozetkaTrackingNumber };
